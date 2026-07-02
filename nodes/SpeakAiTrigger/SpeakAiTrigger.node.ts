@@ -38,7 +38,7 @@ export class SpeakAiTrigger implements INodeType {
 		group: ['trigger'],
 		version: 1,
 		subtitle: '={{$parameter["event"]}}',
-		description: 'Starts a workflow when Speak AI produces new insights, captions, magic prompt responses, or recordings',
+		description: 'Starts a workflow when Speak AI produces new insights, captions, AI Chat responses, or recordings',
 		defaults: {
 			name: 'Speak AI Trigger',
 		},
@@ -67,6 +67,11 @@ export class SpeakAiTrigger implements INodeType {
 				noDataExpression: true,
 				options: [
 					{
+						name: 'New AI Chat Response',
+						value: 'magicPrompt',
+						description: 'Fires when an AI Chat finishes, hydrated with the matching response',
+					},
+					{
 						name: 'New Automated Transcription',
 						value: 'transcript',
 						description: 'Fires when a media item is analyzed or reanalyzed, hydrated with its transcript',
@@ -75,11 +80,6 @@ export class SpeakAiTrigger implements INodeType {
 						name: 'New Captions (SRT/VTT)',
 						value: 'captions',
 						description: 'Fires when a media item is analyzed or reanalyzed, hydrated with its caption file',
-					},
-					{
-						name: 'New Magic Prompts Response',
-						value: 'magicPrompt',
-						description: 'Fires when a magic prompt finishes, hydrated with the matching response',
 					},
 					{
 						name: 'New Recording Captured',

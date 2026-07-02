@@ -26,7 +26,7 @@ export class SpeakAi implements INodeType {
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
-		description: 'Upload media and text to Speak AI, run magic prompts, and search media',
+		description: 'Upload media and text to Speak AI, run AI Chat, and search media',
 		defaults: {
 			name: 'Speak AI',
 		},
@@ -53,9 +53,9 @@ export class SpeakAi implements INodeType {
 						description: 'Look up a single media item and its insights',
 					},
 					{
-						name: 'Run Magic Prompt',
+						name: 'Run AI Chat',
 						value: 'runMagicPrompt',
-						action: 'Run a magic prompt',
+						action: 'Run ai chat',
 						description: 'Ask a question against a folder or set of media',
 					},
 					{
