@@ -212,14 +212,14 @@ export class SpeakAiTrigger implements INodeType {
 		let hydrated: IDataObject | undefined;
 
 		if (event === 'transcript' && mediaId) {
-			const result = await doGet('/v1/zapier/insights', {
+			const result = await doGet('/v1/apps/insights', {
 				insightType: 'transcript',
 				mediaId,
 				pageSize: 1,
 			});
 			hydrated = firstOfArray(result);
 		} else if (event === 'sentiment' && mediaId) {
-			const result = await doGet('/v1/zapier/insights', {
+			const result = await doGet('/v1/apps/insights', {
 				insightType: 'sentiment',
 				mediaId,
 				pageSize: 1,
@@ -227,19 +227,19 @@ export class SpeakAiTrigger implements INodeType {
 			hydrated = firstOfArray(result);
 		} else if (event === 'captions' && mediaId) {
 			const fileType = (this.getNodeParameter('fileType', 'srt') as string).toLowerCase();
-			const result = await doGet('/v1/zapier/export', {
+			const result = await doGet('/v1/apps/export', {
 				mediaId,
 				fileType,
 			});
 			hydrated = firstOfArray(result);
 		} else if (event === 'recording' && mediaId) {
-			const result = await doGet('/v1/zapier/insights', {
+			const result = await doGet('/v1/apps/insights', {
 				uploadType: 'recorder',
 				mediaId,
 			});
 			hydrated = firstOfArray(result);
 		} else if (event === 'magicPrompt') {
-			const result = (await doGet('/v1/zapier/prompts/history', { pageSize: 25 })) as IDataObject;
+			const result = (await doGet('/v1/apps/prompts/history', { pageSize: 25 })) as IDataObject;
 			const history = ((result?.data as IDataObject)?.history as IDataObject[]) ?? [];
 			hydrated = history.find(
 				(entry) =>

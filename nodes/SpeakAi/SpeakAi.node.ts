@@ -380,7 +380,7 @@ export class SpeakAi implements INodeType {
 					const mediaId = this.getNodeParameter('mediaId', i) as string;
 
 					method = 'GET';
-					endpoint = '/v1/zapier/insights';
+					endpoint = '/v1/apps/insights';
 					qs = {
 						mediaId,
 						pageSize: 1,

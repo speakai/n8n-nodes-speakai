@@ -48,7 +48,7 @@ export class SpeakAiApi implements ICredentialType {
 	test: ICredentialTestRequest = {
 		request: {
 			baseURL: '={{$credentials.serverUrl}}',
-			url: '/v1/zapier/insights',
+			url: '/v1/apps/insights',
 			qs: {
 				pageSize: 1,
 			},
