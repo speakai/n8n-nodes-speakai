@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-speakai",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "n8n community node for Speak AI: upload media and text for transcription and analysis, run AI Chat, look up media, and trigger workflows on new transcripts, captions, sentiment, AI Chat responses, and recordings.",
 	"license": "MIT",
 	"homepage": "https://github.com/speakai/n8n-nodes-speakai#readme",
