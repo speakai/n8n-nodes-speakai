@@ -1,5 +1,8 @@
 # n8n-nodes-speakai
 
+[![npm version](https://img.shields.io/npm/v/n8n-nodes-speakai)](https://www.npmjs.com/package/n8n-nodes-speakai)
+[![npm downloads](https://img.shields.io/npm/dw/n8n-nodes-speakai)](https://www.npmjs.com/package/n8n-nodes-speakai)
+
 An [n8n](https://n8n.io) community node for [Speak AI](https://speakai.co). Upload media and text for transcription and analysis, run AI Chat, look up media, and trigger workflows automatically when Speak AI produces new insights.
 
 [n8n](https://n8n.io) is a fair-code licensed workflow automation platform.
