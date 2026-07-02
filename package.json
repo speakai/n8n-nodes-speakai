@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"description": "n8n community node for Speak AI: upload media and text for transcription and analysis, run magic prompts, look up media, and trigger workflows on new transcripts, captions, sentiment, magic prompt responses, and recordings.",
 	"license": "MIT",
-	"homepage": "https://speakai.co",
+	"homepage": "https://github.com/speakai/n8n-nodes-speakai#readme",
 	"keywords": [
 		"n8n-community-node-package",
 		"speakai",
