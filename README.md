@@ -30,10 +30,12 @@ Both nodes use the **Speak AI API** credential:
 
 An action node with four operations:
 
-- **Upload File to Transcribe & Analyze** — send an audio or video URL for transcription and analysis.
-- **Upload Text Note to Analyze** — send raw text for analysis.
-- **Run AI Chat** — ask a question against a folder or a set of media.
-- **Find Media by ID** — look up a single media item and its insights.
+| Operation | What it does |
+| --- | --- |
+| Upload File to Transcribe & Analyze | Send an audio or video URL for transcription and analysis. |
+| Upload Text Note to Analyze | Send raw text for analysis. |
+| Run AI Chat | Ask a question against a folder or a set of media. |
+| Find Media by ID | Look up a single media item and its insights. |
 
 ### Speak AI Trigger
 
